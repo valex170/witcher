@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Witcher</title>
@@ -53,28 +54,86 @@
                         <p class="description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва 
                             путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной
                             нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс.</p>
-                        <button class="button">Cмотреть онлайн</button>
+                        <a data-fancybox href="https://www.youtube.com/embed/Bw6XSzDTeTU" class="button">Cмотреть онлайн</a>
                 </div>
-                <button class="play">
+                <a data-fancybox href="https://www.youtube.com/embed/Bw6XSzDTeTU" class="play">
                     <img src="img\play.svg" alt="play" class="play-img">
-                </button>
+                </a>
             </div>
         </div>
+
+        
 
         <div class="secies">
             <div class="container">
                 <div class="card">
-                    <div class="card-1">
-                        <div class="card-text">
-                            <p class="card-txt">Серия #1</p>
-                            <h3 class="card-title">Начало конца</h3>
+                    <div class="swiper-container swipe">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-1">
+                                    <a class="card-h" data-fancybox href="https://youtu.be/yfbhtG32VLQ">
+                                        <div class="card-text">
+                                            <p class="card-txt">Серия #1</p>
+                                            <h3 class="card-title">Начало конца</h3>
+                                        </div>
+                                     </a>
+                                </div>
+                                <div class="card-2">
+                                    <a class="card-h" data-fancybox href="https://youtu.be/6po5NtlP-N0"> 
+                                        <div class="card-text">
+                                            <p class="card-txt">Серия #2</p>
+                                            <h3 class="card-title">Четыре знака</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-3">
+                                    <a class="card-h" data-fancybox href="https://youtu.be/gba22hkyqV0">
+                                        <div class="card-text">
+                                            <p class="card-txt">Серия #3</p>
+                                            <h3 class="card-title">Предательская Луна</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card-4">
+                                    <div class="card-text">
+                                        <p class="card-txt">Серия #4</p>
+                                        <h3 class="card-title">Банкеты, ублюдки и похороны</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-5">
+                                    <div class="card-text">
+                                        <p class="card-txt">Серия #5</p>
+                                        <h3 class="card-title">Желания из бутылки</h3>
+                                    </div>
+                                </div>
+                                <div class="card-6">
+                                    <div class="card-text">
+                                        <p class="card-txt">Серия #6</p>
+                                        <h3 class="card-title">Редкие виды</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-7">
+                                    <div class="card-text">
+                                        <p class="card-txt">Серия #7</p>
+                                        <h3 class="card-title">Перед падением</h3>
+                                    </div>
+                                </div>
+                                <div class="card-8">
+                                    <div class="card-text">
+                                        <p class="card-txt">Серия #8</p>
+                                        <h3 class="card-title">Нечто большее</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
-                    </div>
-                    <div class="card-2">
-                        <div class="card-text">
-                            <p class="card-txt">Серия #2</p>
-                            <h3 class="card-title">Четыре знака</h3>
-                        </div>
+                        <div class="my-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -95,5 +154,21 @@
             </div>
         </div>
     </footer>
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          navigation: {
+            nextEl: '.my-button-next',
+          },
+      });
+    </script>
+
+
 </body>
 </html>
